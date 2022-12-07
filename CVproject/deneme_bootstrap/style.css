@@ -1,0 +1,39 @@
+#titleLinks{
+    color: #5E454B;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+#hrUst{
+    margin: 0rem 0;
+}
+
+.ustbosluk{
+    height: 50px;
+    width: 100%;
+    background-color: #E7E0C9;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    font-family: cursive;
+}
+
+body{
+    color: #5E454B;
+    text-align: center;
+    font-weight: 400;
+    font-family: cursive;
+    transition: .1s;
+}
+
+a{
+    color: black;
+}
+
+p{
+    transition: .1s;
+}

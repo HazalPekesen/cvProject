@@ -1,0 +1,68 @@
+1.URL alma:
+*natro.com (biz buradan aldık), godaddy,... 
+*site girişinde: modal,pop-up karşılayabilir.
+*domain ismi gir, ara, uzantısını seç (.org, .net, .info, vs.. ayrımlarını seo konusunda göreceğiz), sepete ekle.
+*hosting- belgeleri,resimleri,vs tutan yer. (usb alanı gibi) - sunucu işlemler: hosting
+*domain- alan adı.
+*hosting ile domain arasındaki fark nedir?
+*fbug7.com bizim domain adımız.
+*ileride biz de kendimize sunucu adı alacağız.
+*ödeme tamamlandı.
+* .xyz : belese geliyor beraberinde. deneme, yönlendirme platformu gibi düşünebiliriz.
+*hepimize kul adı-şifre verilecek. gıcıklık yapmayınız.
+
+* domain hosting parası istenilecek müşteriden.
+
+2.HTML:
+-- vs code, notepad++ : html kodlama için ideal.
+-- <> tag
+-- js code larının eklenme mantığı değişebilir. head veya body e eklenebilir.
+
+-- h etiketleri için: eski gazete mantığı düşünülebilir. google da bir arama yapıldığında fark edilmesini kolaylaştırır.
+-- önemli olan başlıkları h1 olarak kullanırız. arama motorlarında neyi öncelik vermek istersek h1 içine onu yazarız.
+-- arama motorlarında fark edilmek için h etiketleri kontrol edilmelidir!!! SEO mantığı!
+
+
+-- web hosting hesapları-> web alanı yönetimi -> CloudLinux, cPanel -> cPanel'e bağlan. -> tools ->  ftp hesapları -> ftp hesabı ekle. 
+
+--ip adresleri global. türk telekom üzerinden veriliyor.
+
+FTP: File Transfer Protocol : 
+bir dosya transfer protokolü olarak geliştirilmiştir. İnternete bağlı olan iki bilgisayar arasında dosya transferini sağlar.
+
+kullanıcı adı: u0626154
+şifre: O_V0a=N48Tm=o0@o
+
+filezilla: sunucuya aktarma işlemini sağlar.
+alan adı-domain
+hosting-sunucu tarafı.
+
+fbug7.com/HazalPekesen.html
+
+
+-- one page site yapısı:
+syf içerisinde id veriliş belirli bir noktaya ulaşmak için 
+<a href = "deneö"
+
+
+--https 'deki s: security dir. sertifika almak gerekir.
+html table
+
+--ÖDEV 1:
+*Filezilla indir.
+*Kullanıcı adı ve şifre ile giriş yap.
+*Kendi adımıza klasör açacağız. örn: hazalpekesen
+*html bir site yapılacak. 4 resim, 4 farklı adrese link, 3 paragraf ve son paragraf kendi arasında 1 satır aşağı inecek.
+*site başlığı: Hazal Pekesen
+
+https://guneysu.com.tr/ogrenci/HazalPekesen3.html
+guneysu.com.tr : domain
+içerisine ogrenci klasörü açıldı.
+
+dosyaları google'a tanıtmak gerekir.
+
+
+
+
+
+

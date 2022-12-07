@@ -1,0 +1,57 @@
+div.gvm{
+    background-color: #c3cc65;
+    width: 400px;
+    margin: 10px;
+}
+
+div.gvmm{
+    background-color: #c3cc65;
+    width: 450px;
+    margin: 10px;
+}
+
+div.gvmmmmmm{
+    background-color: #c3cc65;
+    min-width: 450px;
+    margin: 10px;
+    height: 50px;
+}
+
+.mehmet.gvm{
+    background-color: #c3cc65;
+    width: 450px;
+    margin: 10px;
+}
+
+.mehmet.gvm.gvmm{
+    background-color: red;
+    max-width: 450px;
+    margin: 10px;
+}
+
+.gvm.mehmet.gvmm{
+    background-color:royalblue;
+}
+
+.deneme{
+    border-width: 25px 23px 22px 24px;
+    background-color: salmon;
+    border: 1px solid black;   
+}
+
+a:visited{  
+    color: blue;
+    background-color: coral;
+}
+
+
+a:hover{
+    color: yellowgreen;
+    text-decoration: none;
+    background-color: violet;
+
+}
+
+.id:hover{
+    background-color: darkgoldenrod;
+}

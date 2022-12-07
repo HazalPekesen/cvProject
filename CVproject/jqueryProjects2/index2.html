@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Farklı Aygıtlarda Sorun yaşaması için bu kodu ekliyoruz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS Dosyasını Ekliyoruz -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Jquery  JS Dosyasını Ekliyoruz -->
+    <script src="jq/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS Dosyasını Ekliyoruz -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sayfamızın Başlık Kısmını Ekliyoruz -->
+    <title>ders 17</title>
+
+    <!--jquery script dersleri-2 başladı-->
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                $("div#BenDivIDyim").hide();
+            });
+        });
+        */
+    </script>
+
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("div#BenDivIDyim").hide(5000);  // yavaş yavaş yok gizleniyor..
+            });
+        });
+    </script>
+
+    <!--attribute deger okuma-->
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                var attrDegeri = $("a").attr("href");
+                alert(attrDegeri);
+            });
+        });
+        */
+        //butona click'ledigimizde a tagi'nin href attribute'nun degerini değişkene atadık ve bu degiskeni alert ile bastık.
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                var DBgelenUrl = "www.googleeee.com";
+                var target2 = ""
+                $("a").attr('href', DBgelenUrl);
+                $("a").attr('target', target2);
+                var attrDegeriDeğisti = $("a").attr('href');
+                alert(attrDegeriDeğisti);
+                $("button").attr('class', 'btn btn-secondary');
+                $("img").attr('src', 'img/kopek.jpeg');
+            });
+        });
+        */
+    </script>
+
+    <script>
+        $(function () {
+            $("#ekleButon").click(function () {
+                var attrDegeri = Number(ilkdeger.value);
+                if (attrDegeri == 2) {
+                    $("#ekleButon").attr('href', 'https://www.fbu.edu.tr/');
+                    alert("fb sayfasına gidiyorsunuz");
+                }
+                else if (attrDegeri == 1) {
+                    $("#ekleButon").attr('href', 'https://www.w3schools.com/jquery/jquery_events.asp');
+                    alert("jquery sayfasına gidiyorsunuz");
+                }
+                else {
+                    alert("geçerli bir numara ekleyiniz!!");
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        //fonksiyon sınıfı(metot) oluşturma:
+        /*
+        $(function () {
+            $.SinifAdi = {
+                gonder: function () {
+                    parametre1 = ilkdeger.value;
+                    parametre2 = ikincideger.value;
+                    alert("gonder fonk calisti:" + " euro degeri: " + parametre1 + " dolar degeri: " + parametre2);
+                },
+                onaylaDurumu: function () {
+                    alert("onaylandı");
+                }
+            };
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                var inputDegeri = $("input[name=InputBosluk]").val();
+                alert(inputDegeri);
+                var inputDegerTrimEklendi = $("input[name=InputBosluk]").val().trim();
+                alert(inputDegerTrimEklendi);
+                $("input[name=InputBosluk]").val('');
+                alert('Temizle Focus');
+            });
+        });
+        */
+    </script>
+
+    <script>
+        $(function () {
+            $("#gizleButon").on("click", function () {
+                alert("test");
+            });
+            $("#gizleButon").on({
+                mouseenter: function () {
+                    $(this).after('<br> <h1> Sonra Oluştu </h1>');
+                }
+            });
+            $("#gizleButon").on({
+                mouseleave: function () {
+                    $(this).after('<br> <h1> Sonra Oluştu </h1>');
+                }
+            });
+            $("#gizleButon").on({
+                mousedpwn: function () {
+                    $(this).after('<br> <h1> Sonra Oluştu </h1>');
+                }
+            });
+            $("#gizleButon").on({
+                click: function () {
+                    $("h1").append('<br> <h1> Ardından Hemen Sonrasının Ertesinde Oluştu </h1>');
+                }
+            });
+            $("#gizleButon").hover(function () {
+                    alert("You entered p1!");
+                    $("h1").append('<br> <h1> Ardından Hemen Sonrasının Ertesinde Oluştu </h1>');
+                });
+        });
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("#p1").mouseleave(function () {
+                alert("Bye! You now leave p1!");
+            });
+            $("#p1").mouseenter(function () {
+                alert("You entered p1!");
+            });
+            $("input").focus(function () {
+                $(this).css("background-color", "#cccccc");
+            });
+            $("input").blur(function () {
+                $(this).css("background-color", "#ffffff");
+            });
+        });
+        */
+    </script>
+
+    <script>
+        $(function () {
+            $("#renkButton").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center">
+        <div class="col-md-3">
+            <div class="card text-center">
+                <h5 class="card-header">Jquery Tanımlamaları</h5>
+                <h1>h1. Bootstrap heading1</h1>
+                <h1>h1. Bootstrap heading2</h1>
+                <h2>h2. Bootstrap heading</h2>
+                <h3>h3. Bootstrap heading</h3>
+                <h4>h4. Bootstrap heading</h4>
+                <h5>h5. Bootstrap heading</h5>
+                <h6>h6. Bootstrap heading</h6>
+                <p class="lead"> Ben sadece paragraftım yok olacağım.</p>
+                <p id="p1">Sen artık o renk değilsin.</p>
+                <div id="BenDivIDyim">Div icerik yazisi gelecek</div>
+                <img src="img/Fenerbahçe_Üniversitesi_FBÜ.png" alt="">
+                <a href="https://www.fbu.edu.tr/" class="link-primary" target="_blank">Primary link</a>
+                <a href="#" class="link-success">Success link</a>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" id="gizleButon">Gizle</button>
+                </div>
+                <input type="text" name="InputBosluk" id="ilkdeger" placeholder="euro degeri giriniz."
+                    onkeypress="return isNumberKey(event)">
+                <input type="text" name="InputBosluk" id="ikincideger" placeholder="dolar degeri giriniz."
+                    onkeypress="return isNumberKey(event)">
+                <a href="#" class="btn btn-danger" id="ekleButon">Girilen Değerleri Ekleeee</a>
+                <button type="button" class="btn btn-dark"
+                    onclick="$.SinifAdi.gonder(), $.SinifAdi.onaylaDurumu()">Sınıf methodu çalıştı</button>
+                <button type="button" class="btn btn-light" id="renkButton">Renkleri Getir!</button>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/customInputKontrol.js"></script>
+    <!--buradaki kodları kullanabilmek için input'lara onkeypress attribute'u ekledik-->
+
+</body>
+
+</html>

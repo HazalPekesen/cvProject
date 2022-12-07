@@ -1,0 +1,77 @@
+body{
+    background-color: #D9F7D1;
+    font-family: Cambria;
+    font-size: 18px;
+    color: #48098c;
+    text-align: left;
+}
+
+.arkaplan{
+    background-color: #f0cecf;
+    font-family: Cambria;
+    font-size: 18px;
+    color: #790af3;
+    text-align: center;
+    width: 30%;
+    height: 90%;
+}
+
+.resimArkaplan{
+    background-image: url(http://www.fbug7.com/images/banner-arkaplan.png);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    color: #600305;
+    text-align: right;
+    width: 55%;
+    height: 40%;
+}
+
+span{
+    background-color: #c9bfdb;
+    color: #ecdede;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15pt;
+}
+
+div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15pt;
+}
+
+div#t{
+    background-color: #dedae7;
+    color: #ffffff;
+}
+
+div#c{
+    background-color: rgb(196, 218, 210);
+    color: rgb(251, 251, 249);
+}
+
+div.t{
+    background-color: #ddd5ec;
+    color: #f3f3f3;
+}
+
+div.c{
+    background-color: rgb(212, 228, 223);
+    color: rgb(251, 251, 251);
+}
+
+.bolumler{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    background-color: #c4a9a9;
+    color: #410506;
+    width: 40%;
+    float: right;
+}
+
+.dersler{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    background-color: #4f3977;
+    color: #ecdede;
+    width: 60%;
+    float: right;
+}

@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma | Blog</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    }
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    }
+    </style>
+</head>
+<body>
+    <i>ÖDEV</i><br><br>
+    <b>Hizmet Adı:</b>
+    <select name="secenek" id="secenekHizmet" placeholder="hizmet seçiniz.">
+        <option value="scnk1">Hizmet-1</option>
+        <option value="scnk2">Hizmet-2</option>
+        <option value="scnk3">Hizmet-3</option>
+        <option value="scnk4">Hizmet-4</option>
+    </select>
+    <br><br>
+    <b>İsim:</b>
+    <input type="text" id="isim" name="isim">
+    <br><br>
+    <b>Fiyat:</b>
+    <input type="text" id="fiyat" name="fiyat">
+    <br><br><br>
+    <b>Teslimat Tarihi:</b>
+    <br><br>
+    <table>
+        <tr>
+            <th>Pazartesi</th>
+            <th>Salı</th>
+            <th>Çarşamba</th>
+            <th>Perşembe</th>
+            <th>Cuma</th>
+        </tr>
+        <tr>
+            <td><input type="radio" name="odemePzt" value="Pazartesi"></td>
+            <td><input type="radio" name="odemeSalı" value="Salı"></td> 
+            <td><input type="radio" name="odemeCrs" value="Çarşamba"></td>
+            <td><input type="radio" name="odemePers" value="Perşembe"></td> 
+            <td><input type="radio" name="odemeCuma" value="Cuma"></td>                     
+        </tr>
+        <tr>
+            <td>Süre Teslim</td>
+            <td>Yerinde Teslim</td>
+            <td >Ortak Nokta</td>           
+            <td colspan="2">Teslimat Yok</td>
+        </tr>
+    </table>
+    <br><br>
+    <b>Teslimat Adresi:</b><br><br>
+    <textarea name="teslimatAdres" id="teslimatAdres" cols="30" rows="10"></textarea>
+    <br><br>
+    <img src="img/tree.png" alt="logo" width="150" height="150">
+    <br><br>
+    <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12045.674447861002!2d29.11230624189989!3d40.99420996461857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac945f68fe1fd%3A0x23112f2256fb1664!2sFenerbah%C3%A7e%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1649779027618!5m2!1str!2str"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body{
+    margin: 0 auto;
+}
+
+.ust{
+    background-color: #48098C;
+    color: #f1e4e4;
+    height: 100px;
+}
+
+.orta{
+    background-color: #eadff7;
+    color: #48098c;
+    height: 450px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.ortaustsol{
+    background-color: #ffffff;
+    color: #48098c;
+    width: 50%;
+    height: 190px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.ortaustsag{
+    background-color: #ffffff;
+    color: #48098c;
+    width: 20%;
+    height: 190px;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.ortaaltsag{
+    background-color: #ffffff;
+    color: #48098C;
+    width: 20%;
+    height: 200px;
+    margin-left: 5%;
+    margin-right: 10%;
+    float: left;
+}
+
+.ortaaltsol{
+    background-color: #ffffff;
+    color: #48098C;
+    width: 20%;
+    height: 200px;
+    margin-left: 10%;
+    margin-right: 5%;
+    float: left;
+}
+
+.ortaaltorta{
+    background-color: #ffffff;
+    color: #48098C;
+    width: 20%;
+    height: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+}
+
+.alt{
+    background-color: #48098C;
+    color: #f1e4e4;
+    height: 50px;
+}
+
+.sifirla{clear: both;}
+

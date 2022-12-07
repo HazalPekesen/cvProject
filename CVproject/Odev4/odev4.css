@@ -1,0 +1,106 @@
+.baslik{
+    font-family: cursive;
+    background-image: url(img/laptop-gd881aac4e_1920.jpg);
+    height: 150px;  
+    background-position: center;
+}
+
+#baslikYazı{
+    padding-top: 55px;
+    color:aliceblue;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.ustBosluk{
+    width: 100%;
+    height: 40px;
+    background-color: bisque;
+    text-align: center;
+    padding-top: 18px;
+    font-weight: bolder;
+    color: darkgray;
+    font-size: 20px;
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+    height: 80px;
+}
+
+li a{
+    display: block;
+    padding:31px 196px;
+    text-align: center;
+    background-color: rgb(224, 202, 174);
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.ortaBosluk{
+    width: 100%;
+    height: 30px;
+}
+
+.logo{
+    float: left;
+    /* display: block; */
+}
+
+
+.baslikTable{
+    text-align: center;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+.yazi{
+    height: 240px;
+    width: auto;
+}
+
+.video{
+    float: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.altTablo th{
+    background-color:aquamarine;
+    color: black;
+    font-family: cursive;
+    font-size: 16px;
+    height: 140px;
+    width: 315px;
+    text-align: center;
+}
+
+.altTablo td{
+    background-color:aquamarine;
+    color: black;
+    font-family: cursive;
+    font-size: 16px;
+    height: 140px;
+    width: 315px;
+    text-align: center;
+}
+
+.altTablo{
+    margin: 20px;
+}
+

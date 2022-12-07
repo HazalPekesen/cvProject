@@ -1,0 +1,25 @@
+#titleLinks{
+    color: #5E454B !important;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+#hrUst{
+    margin: 0rem 0;
+}
+
+
+#footer{
+    color: #5E454B !important;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+body{
+    font-weight: 400;
+    font-family: cursive;
+}

@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Farklı Aygıtlarda Sorun yaşaması için bu kodu ekliyoruz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS Dosyasını Ekliyoruz -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Jquery  JS Dosyasını Ekliyoruz -->
+    <script src="jq/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS Dosyasını Ekliyoruz -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sayfamızın Başlık Kısmını Ekliyoruz -->
+    <title>ders 16</title>
+
+    <!--jquery script dersleri-1 başladı-->
+    <script>
+        /*
+        $(document).ready(function () {
+            $("h1").click(function () {
+                $(this).hide();
+            });
+        });
+        */
+        //döküman yüklendiği anda fonksiyonu çalıştır. çalıştırdığın fonksiyonla h1'ler click'lendiğinde h1 i gizlesin..
+        //burada this: h1 olarak ele alınır.
+    </script>
+
+    <!--jquery script dersleri-2 başladı-->
+    <script>
+        /*
+        $(document).ready(function gizle() {
+            $("h1").click(function () {
+                $("p").hide();
+                alert("p'ler gizlendi!");
+            });
+        });
+        */
+        //döküman yüklendiği anda fonksiyonu çalıştır. çalıştırdığın fonksiyon h1'ler click'lendiğinde p' leri gizlesin..
+    </script>
+
+    <script>
+        // document.ready() yerine function ile baslayabiliriz.
+        /*
+        $(function () {
+            $("h2").click(function () {
+                $("p").hide();
+            })
+        });
+        */
+    </script>
+
+    <script>
+        //document.ready() yerine function ile baslayabiliriz.
+        /*
+        $(function () {
+            $("h1").click(function () {
+                $("p").hide();
+                alert("p'ler gizlendi!");
+            })
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("h2").click(function () {
+                $("p").show();
+                alert("p'ler açıldı!");
+            })
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("h2").click(function () {
+                $(".progress").hide();
+                alert("progressler gizlendi!");
+            })
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                $("#DonenCisim").hide();
+            })
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                $("*").hide();
+            })
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("h3").click(function () {
+                $("div.card, card-header").hide();
+            })
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("h3").click(function () {
+                $("div.spinner-border.text-info").hide();
+            })
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(setTimeout(function () {
+                $("h1:first").hide();
+                alert("h1 first gizlendi!");
+            }, 4000));
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function gizlee() {
+                $("ul li:first").hide();
+                alert("ul:first > li:first gizlendi!");
+                document.querySelector("h5.card-header").innerHTML="hello hazal!!!";
+            });
+        });
+        */
+    </script>
+
+    <!-- ATTRIBUTE: div, h, p lerin bir özelliği class, role, value bir attribute olur. örn. <div class="card text-center" id="" value=""> da yer alan class, id, value -->
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                $("[role]").hide();
+            });
+        });
+        */
+        // button click'lendiğinde role attribute'u olanları gizleme işlemi yapıldı.!!
+    </script>
+
+
+    <script>
+        /*
+        $(function () {
+            $("#gizleButon").click(function () {
+                $("a[target =_blank]").hide();
+            });
+        });
+        */
+    </script>
+
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                $("a[target != '_blank']").hide();
+            });
+        });
+        */
+    </script>
+
+    <script>
+        /*
+        $(function () {
+            $("button").click(function () {
+                $(":button").hide();
+            });
+        });
+        */
+        // type'ı button olanları gizleme işlemi yaptık!!!
+        // : ile type aldık!        
+    </script>
+
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("tr:odd").css({
+                    "background-color": "red",
+                    "font-size": "16px",
+                    "color": "yellow"
+                });
+                $("tr:even").css({
+                    "background-color": "green",
+                    "font-size": "16px",
+                    "color": "yellow"
+                });
+            });
+        });
+    </script>
+
+    <!-- 2. bir yol olarak: -->
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("tr:odd").css("background-color", "#EB5353").css("font-size", "26px");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("p:contains(Sen)").css("background-color", "yellow");
+            });
+        });
+        // içerisinde sen geçen paragrafın back. color'ını değiştir!!
+    </script>
+
+
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("p:contains(Sen)").css("background-color", "yellow").css("font-size", "26px").css("color", "blue");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("div:empty").css("background-color", "yellow").css("width", "50px");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center">
+        <div class="col-md-3">
+            <div class="card text-center">
+                <h5 class="card-header">Jquery Tanımlamaları</h5>
+                <h1>h1. Bootstrap heading1</h1>
+                <h1>h1. Bootstrap heading2</h1>
+                <h2>h2. Bootstrap heading</h2>
+                <h3>h3. Bootstrap heading</h3>
+                <h4>h4. Bootstrap heading</h4>
+                <h5>h5. Bootstrap heading</h5>
+                <h6>h6. Bootstrap heading</h6>
+
+                <p class="lead"> Ben sadece paragraftım yok olacağım.</p>
+                <p>Sen artık o renk değilsin.</p>
+
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="spinner-border text-primary" id="DonenCisim" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+
+                <ul>
+                    <li>
+                        Muhasebedeki İşlem Talebi
+                        <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                    <li>
+                        Finanstaki İşlem Talebi
+                        <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li>
+                        IT İşlem Talebi
+                        <span class="badge bg-primary rounded-pill">1</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Muhasebedeki İşlem Talebi
+                        <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                    <li>
+                        Finanstaki İşlem Talebi
+                        <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li>
+                        IT İşlem Talebi
+                        <span class="badge bg-primary rounded-pill">1</span>
+                    </li>
+                </ul>
+                <a href="#" class="link-primary" target="_blank">Primary link</a>
+                <a href="#" class="link-success">Success link</a>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" id="gizleButon">Gizle</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Jacobb</td>
+                        <td>Thorntond</td>
+                        <td>@fats</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Jacobdss</td>
+                        <td>Thorntondss</td>
+                        <td>@fatsss</td>
+                    </tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+            <div class="card-footer text-center">
+                <button type="button" class="btn btn-primary">Gizle</button>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <div class="card-body"></div>
+        </div>
+    </div>
+</body>
+
+</html>

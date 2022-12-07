@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="jq/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Hesap Makinesi</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3 text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header text-center" id="baslik">
+                        Hesaplasın
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="sayi1" placeholder="name@example.com"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Birinci sayı griniz"
+                                    onkeypress="return isNumberKey(event)">
+                                <label for="floatingInput">Birinci Sayı</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="sayi2" placeholder="name@example.com"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="İkinci sayı giriniz"
+                                    onkeypress="return isNumberKey(event)">
+                                <label for="floatingInput">İkinci Sayı</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Toplama işlemi yapmaktadır." id="btnTopla"
+                            onclick="topla()">Topla</button>
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Çıkarma işlemi yapmaktadır." id="btnCikar"
+                            onclick="cikar()">Çıkar</button>
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Çarpma işlemi yapmaktadır." id="btnCarp"
+                            onclick="carp()">Çarp</button>
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Bölme işlemi yapmaktadır." id="btnBol"
+                            onclick="bol()">Böl</button>
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Temizleme işlemi yapmaktadır." id="btnTemizle"
+                            onclick="temizle()">Temizle</button>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100" id="progressArtır">0%</div>
+                        </div>
+                        <div class="alert alert-success" role="alert" id="kutuSonuc">
+
+                        </div>
+                        <!-- <input class="form-control" type="text" placeholder="" aria-label="Disabled input example"
+                            disabled id="kutuSonuc"> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <!-- <img src="..." class="rounded me-2" alt="..."> -->
+                <strong class="me-auto">Temizlendi!</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Girdiğiniz değerler silindi...
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BUNLAR BOOTSTRAP JS DOSYASINA TAŞINDI!!!!! <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script> -->
+
+
+    <!-- BUNLAR CUSTOM HESAPLA JS DOSYASINA TAŞINDI!!!!!
+    <script>
+        var btn = document.getElementById("btnTopla");
+        btn.onclick = function Topla() {
+            var s1 = Number(document.getElementById("sayi1").value);
+            var s2 = Number(document.getElementById("sayi2").value);
+            var toplam = s1 + s2;
+            document.getElementById("progressArtır").value = "100";
+            document.getElementById("kutuSonuc").value = "Girilen Sayıların Toplamı : " + toplam
+        };
+
+        var btn = document.getElementById("btnCikar");
+        btn.onclick = function Cikar() {
+            var s1 = Number(document.getElementById("sayi1").value);
+            var s2 = Number(document.getElementById("sayi2").value);
+            var cikarim = s1 - s2;
+            document.getElementById("kutuSonuc").value = "Girilen Sayıların Farkı : " + cikarim
+        };
+
+        var btn = document.getElementById("btnCarp");
+        btn.onclick = function Carp() {
+            var s1 = Number(document.getElementById("sayi1").value);
+            var s2 = Number(document.getElementById("sayi2").value);
+            var carpim = s1 * s2;
+            document.getElementById("kutuSonuc").value = "Girilen Sayıların Çarpımı : " + carpim
+        };
+
+        var btn = document.getElementById("btnBol");
+        btn.onclick = function Bol() {
+            var s1 = Number(document.getElementById("sayi1").value);
+            var s2 = Number(document.getElementById("sayi2").value);
+            var bolum = s1 / s2;
+            document.getElementById("kutuSonuc").value = "Girilen Sayıların Bölümü : " + bolum
+        };
+
+        var btn = document.getElementById("btnTemizle");
+        btn.onclick = function Bol() {
+            document.getElementById("sayi1").value = "";
+            document.getElementById("sayi2").value = "";
+            document.getElementById("kutuSonuc").value = ""
+        };
+    </script> -->
+
+
+    <!-- BUNLAR BOOTSTRAP JS DOSYASINA TAŞINDI!!!!! <script>
+        var toastTrigger = document.getElementById('btnTemizle')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            }) 
+        }
+    </script> -->
+
+
+    <script src="customScript/customInputControl.js"></script>
+    <script src="customScript/customBootstrap.js"></script>
+    <script src="customScript/customHesaplaTanımlamaları.js"></script>
+    <script src="customScript/customProgressArtir.js"></script>
+    <script src="customScript/customHesapla.js"></script>
+    <script src="customScript/customTemizle.js"></script>
+</body>
+
+</html>

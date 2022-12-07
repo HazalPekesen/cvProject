@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/customJqScript.js"></script> -->
+    <title>BLOG | hazalpekesen</title>
+  </head>
+  <body>
+    <!--start header-->
+    <header
+      class="fixed-top navbar fixed-top nav justify-content-center navbar-light bg-light"
+    >
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#slider" id="titleLinks">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects" id="titleLinks">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer" id="titleLinks">About Me</a>
+        </li>
+      </ul>
+    </header>
+    <!--end of header-->
+
+    <!-- <hr id="hrUst"> -->
+
+    <!-- <div class="ustbosluk">HAZAL PEKESEN</div> -->
+
+    <br />
+
+    <!--start container-->
+    <div class="container">
+      <!--part of slider-->
+      <div class="row" id="slider">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/wireless-technology.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/What_is_Information_Technology.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--end of slider part-->
+
+      <br /><br />
+
+      <!--part-1 of projects-->
+      <div class="row" id="projects">
+        <div class="col-md-4">
+          <div class="card" style="width: 25rem">
+            <div class="card-header">HTML</div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text">My experiments on HTML</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="../HTML_/Odev1/HazalPekesen.html" target="_blank">Deneme-1</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../HTML_/Odev2/HazalPekesen.html" target="_blank">Deneme-2</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../HTML_/Odev3/HazalPekesen.html" target="_blank">Deneme-3</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Deneme-4</a>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="cvEtkinliklerKayitButonu btn btn-outline-primary btn-xs"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Tooltip on top"
+              >
+                Kayıt
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 25rem">
+            <div class="card-header">CSS</div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text">My experiments on CSS</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="../HTML_/Ders3/Ders3_2.html" target="_blank">Deneme-1</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../HTML_/Ders3/Ders3_3.html" target="_blank">Deneme-2</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../HTML_/Ders4/Ders4_1.html" target="_blank">Deneme-3</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../HTML_/Ders5/Ders5/Ders5_3.html" target="_blank">Deneme-4</a>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="cvEtkinliklerKayitButonu btn btn-outline-primary btn-xs"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Tooltip on top"
+              >
+                Kayıt
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 25rem">
+            <div class="card-header">CSS&BOOTSTRAP</div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text">My experiments on CSS&BOOTSTRAP</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="../bootstrapgiris_18.4.22/bootstrap1.html">Deneme-1</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../bootstrapgiris_18.4.22/iletisim.html">Deneme-2</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../bootstrap_20.4.22/index2.html">Deneme-3</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../bootstrap_20.4.22/index4.html">Deneme-4</a>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="cvProjelerKayitButonu btn btn-outline-primary btn-xs"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Tooltip on top"
+              >
+                Kayıt için tıklayınız.
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of projects part-1-->
+
+      <br />
+
+      <!--part-2 of projects-->
+      <div class="row" id="projects">
+        <div class="col-md-4">
+          <div class="card" style="width: 25rem">
+            <div class="card-header">JavaScript</div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text">My experiments on JavaScript</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="../JavascriptProjects/hesapMak.html" target="_blank"
+                  >Deneme-1</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="../JavascriptProjects/index8.html" target="_blank"
+                  >Deneme-2</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="../JavascriptProjects/index6.html" target="_blank"
+                  >Deneme-3</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="../JavascriptProjects/index5.html" target="_blank"
+                  >Deneme-4</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="../JavascriptProjects/index3.html" target="_blank"
+                  >Deneme-5</a
+                >
+              </li>
+            </ul>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="cvEtkinliklerKayitButonu btn btn-outline-primary btn-xs"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                Kayıt
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 25rem">
+            <div class="card-header">Jquery</div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text">My experiments on Jquery</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="../jqueryProjects2/index.html" target="_blank"
+                  >Deneme-1</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="../jqueryProjects2/index2.html" target="_blank"
+                  >Deneme-2</a
+                >
+              </li>
+              <li class="list-group-item"><a href="#">Deneme-3</a></li>
+            </ul>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="cvEtkinliklerKayitButonu btn btn-outline-primary btn-xs"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                Kayıt
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 25rem">
+            <div class="card-header">MVC</div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text">My experiments on MVC</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="../Odev1/HazalPekesen.html">Deneme-1</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../Odev2/HazalPekesen.html">Deneme-2</a>
+              </li>
+              <li class="list-group-item">
+                <a href="../Odev3/HazalPekesen2.html">Deneme-3</a>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="cvEtkinliklerKayitButonu btn btn-outline-primary btn-xs"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                Kayıt
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of projects part-2-->
+
+      <!--off canvas start-->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>Please fill in the blanks in the form and register.</div>
+          <br />
+          <div class="container">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">ad giriniz.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Surname</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">soyad giriniz.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--off canvas end-->
+    </div>
+    <!--end of container-->
+
+    <!--start footer-->
+    <footer class="bd-footer py-3 mt-3 bg-light" id="footer">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none"
+              href="/"
+              aria-label="Bootstrap"
+            >
+              <span class="fs-5">Hazal Pekesen</span>
+            </a>
+            <ul class="list-unstyled small text-muted">
+              <li class="mb-2">Software Developer</li>
+            </ul>
+          </div>
+          <!-- <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+            <h5>Guides</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="/">Home</a></li>
+              <li class="mb-2"><a href="/docs/5.1/">Docs</a></li>
+              <li class="mb-2"><a href="/docs/5.1/examples/">Examples</a></li>
+              <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+            </ul>
+          </div> -->
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="https://github.com/HazalPekesen" target="_blank"
+                  >Github</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://www.linkedin.com/in/hazalpekesen/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="https://medium.com/@hazalpekesen" target="_blank"
+                  >Medium</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end of footer-->
+  </body>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+</html>

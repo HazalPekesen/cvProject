@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <script src="jq/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Document1</title>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+
+    <script>
+        console.log("ekrana log kayıt");
+    </script>
+
+    <script>
+        console.log("ekrana log kayıt", 1, "diğer metin");
+    </script>
+
+    <script>
+        var degiskenAdi = 2;
+        console.log(degiskenAdi);
+
+        var degiskenMetin = "biz süperiz yaa";
+        console.log(degiskenMetin);
+    </script>
+
+    <script>
+        var bugun = "pazartesi",
+            hafta = 12,
+            ay = "nisan",
+            yıl = 2022;
+        console.log(bugun, hafta, ay, yıl);
+    </script>
+
+    <script>
+        // yazılımcıya destek veya unutmamak için yazdık.
+        var isminiz;
+        isminiz = "hazal";
+        console.log(isminiz);
+    </script>
+
+    <script>
+        /* yazılımcıya destek veya unutmamak için yazdık.
+        var isminiz;
+        isminiz = "hazal";
+        console.log(isminiz);
+        */
+    </script>
+
+    <script>
+        console.log(isminiz + " + simgesi stringlerde birleşririr int değişkenlerde toplar:" + "bulut");
+    </script>
+
+    <script>
+        var degiskenSayi1;
+        degiskenSayi1 = 5;
+        degiskenSayi2 = 3;
+        console.log(degiskenSayi1 + degiskenSayi2 + " dk. sonra molaya çıkabiliriz.");
+    </script>
+
+    <script>
+        var degiskenSayisi1;
+        degiskenSayisi1 = 10;
+        degiskenSayisi2 = 4;
+        console.log(degiskenSayisi1 + ++degiskenSayisi2 + " güzel hoşuma gitti görenler şaşırsın");
+    </script>
+
+    <script>
+        var degiskenSayisi1;
+        degiskenSayisi1 = 10;
+        degiskenSayisi2 = 4;
+        console.log(degiskenSayisi1 + --degiskenSayisi2 + " güzel hoşuma gitti görenler şaşırsın");
+    </script>
+
+    <script>
+        var sayimiz = 3;
+        console.log(sayimiz == 3);
+        console.log(sayimiz == "3");
+        console.log("cevabımız true olacaktır.");
+    </script>
+
+    <!-- 3 eşittir kullandığımızda veri tipini kendi algılar! -->
+    <script>
+        var sayimiz = 3;
+        console.log(sayimiz === 3);
+        console.log(sayimiz === "3");
+        console.log("cevabımız true olacaktır.");
+    </script>
+
+    <script>
+        var sayimiz = 3;
+        console.log(sayimiz != 5);  // buradaki = sadece değerine bakıyor!!
+        console.log("cevabımız true olacaktır. Sayı 3 e eşit değil");
+    </script>
+
+    <script>
+        var sayimiz = "3";
+        console.log(sayimiz !== 3);  // buradaki == veri türüne ve değerine bakıyor!!
+        console.log("cevabımız true olacaktır. Sayı 3 e eşit değil (==) 2 adet oldu");
+    </script>
+
+    <script>
+        var sayimiz = 5;
+        console.log(sayimiz >= 5);
+        console.log("cevabımız true olacaktır.");
+    </script>
+
+    <script>
+        var sayimiz = 5;
+        console.log(sayimiz > 10);
+        console.log("cevabımız false olacaktır.");
+    </script>
+
+    <script>
+        var a = 4,
+            b = 9,
+            c = "hazal";
+
+        console.log(a + b + c);
+        console.log(a, b, c);
+        console.log(a < b);
+        console.log(b > c);
+        console.log(a != 3);
+        console.log(b == 9);
+        console.log(c !== 8);
+    </script>
+
+    <script>
+        var sayimiz1 = 5,
+            sayimiz2 = 10,
+            sayimiz3 = 15,
+            sayimiz4 = 20;
+
+        console.log(sayimiz1 < 10 && sayimiz4 > sayimiz3);
+        console.log(sayimiz1 < 10 || sayimiz4 > sayimiz3);  // ve, veya operatörünü bitsel olarak kullansaydık 1-0 dönerdi.
+        console.log(sayimiz1 < 10 ^ sayimiz4 > sayimiz3);  // yada operatörü bitsel olarak kullanılır.
+    </script>
+
+    <script>
+        var molaVerelimmi = true;
+        if (molaVerelimmi) {
+            console.log("hadi o zaman!!!");
+        }
+    </script>
+
+    <script>
+        var molaVerelimmi = false;
+        if (!molaVerelimmi) {
+            console.log("hadi o zaman gidek!!!");
+        }
+    </script>
+
+    <script>
+        var ikinciMola = false;
+        var siniftaOlanlarDinlendiMi = false;
+        if (ikinciMola) {
+            console.log("ikinci molaya çıktık");
+        }
+        else if (siniftaOlanlarDinlendiMi) {
+            console.log("sinifta olanlar dinlendi");
+        }
+        else {
+            console.log("hadi o zaman devamkee");
+        }
+    </script>
+
+    <script>
+        var yoruldunuzMu = false;
+        var devamEdelimMi = false;
+        if (yoruldunuzMu) {
+            console.log("daha yeni başladık");
+        }
+        else {
+            if (devamEdelimMi) {
+                console.log("gayet güzel gidiyoruz.");
+            }
+            else {
+                console.log("sevmeyince yük olur karınca" + "\n" + "sevince filler karınca....");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

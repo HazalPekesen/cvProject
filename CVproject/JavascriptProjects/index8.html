@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="jq/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>KDV Hesaplama-2</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3 text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header text-center" id="baslik">
+                        KDV Hesaplama
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="kdvOranıDegeri"
+                                    onkeypress="return isNumberKey(event)">
+                                <label for="floatingInput">KDV Oranı Ekleyiniz.</label>
+                            </div>
+                        </li>
+                        <button type="button" class="btn btn-outline-info btn-sm" id="kdvOranEkleBtn"
+                            onclick="kdvOranDegeriEkle()">Ekle</button>
+                        <li class="list-group-item">
+                            <div class="form-floating mb-3 mt-3">
+                                <select class="form-select" id="kdvOranları" aria-label="Floating label select example">
+                                    <option selected hidden>Eklenen KDV Oranları</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="sayi1"
+                                    onkeypress="return isNumberKey(event)">
+                                <label for="floatingInput">Not Değeri Giriniz.</label>
+                            </div>
+                        </li>
+                        <button type="button" class="btn btn-outline-info btn-sm" id="kdvHesaplaBtn" onclick="KdvHesapla()">KDV
+                            Hesapla</button>
+                        <li class="list-group-item">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="sonuc"
+                                    onkeypress="return isNumberKey(event)">
+                                <label for="floatingInput">Sonuç</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="customScript/customInputControl.js"></script>
+    <script src="customScript/customKdvOranıEkle_2.js"></script>
+
+</body>
+
+</html>
